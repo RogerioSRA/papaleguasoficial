@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+    --cor01: #ffffff; /*branco */
+    --cor02: #cccccc; /*cinza claro*/
+    --cor03: #888888; /*cinza medio*/
+    --cor04: #19387f; /*azul papaleguas*/
+    --cor05: #ffffffff;
+    --cor06: #ffffffff;
+    --cor07: #ffffffff;
+}
+
+body{
+    background-color: var(--cor02);
+}
+header{
+    height: 230px;
+    background-image: linear-gradient(to right, var(--cor04), var(--cor02));
+    z-index: 0;
+}
+header h1{
+    color: white;
+    font-style: italic;
+    padding-left: 10px;
+}
+#paragrafocabecalho{
+    display: block;
+    height: 100px;
+    width: 300px;
+    padding-left: 10px;
+    color: white;
+}
+div#backgroundcabecalho{
+    position: relative;
+    display: block;
+    margin-top: -137px;
+    height: 100%;
+    background-size: contain;
+    background-image: url("fotos/background02.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    overflow: auto;
+}
+#sectionmenu{
+    position: sticky;
+    top: -1px;
+    background-color: var(--cor02);
+    border-top: 2px solid var(--cor03);
+    border-bottom: 2px solid black;
+    z-index: 1;
+}
+nav > ul > li{
+    display: inline-table;
+    margin: 10px 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px 5px var(--cor03);
+}
+nav > ul > li:hover{
+    box-shadow: inset 0 0 5px 5px var(--cor04);
+}
+nav > ul > li > ul{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 10px;
+    background-color: white;
+    display: none;
+}
+nav ul li ul li{
+    padding: 10px;
+    border: 1px dotted black;
+    
+}
+nav > ul > li:hover ul{
+    display: block;
+}
+nav > ul > li > ul > li:hover{
+
+    box-shadow: inset 0 0 5px 5px var(--cor04);
+}
+#sectionmain{
+    max-width:100px;
+    background-color: var(--cor01);
+    padding: 1em;float: none;
+    box-shadow: 0 0 7px 3px black;
+    margin: auto;
+    z-index: 1;
+}
+aside#esq{
+    background-color: green;
+    float: left;
+} 
+aside#dir{
+    background-color: yellow;
+    float: right;
+}
+#esq, #dir{
+    max-width: 20vw;
+    padding: 10px;
+    box-shadow: 0 0 7px 3px black;
+    z-index: 0;
+}
+#esq, #dir{
+display: inline;
+}
+#esq img , #dir img{
+    width: 20vw;
+} */
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    clear: both;
+}
+footer picture{
+    display: block;
+    float: left;
+}
+footer > table{
+    display: block;
+    margin-left: 40vw;
+}
+footer > table > thead > th, tr, td{
+    width: 100px;
+    text-align: center;
+}
